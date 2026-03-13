@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 3000;
 const registrations = [
     {
         id: 1,
-        name: "lorena",
-        email: "lorenaemail@example.com",
+        name: "stub user",
+        email: "stubemail@example.com",
         phone: 81912345678,
         mensage: "a mensage",
     },
