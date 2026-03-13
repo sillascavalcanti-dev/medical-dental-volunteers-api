@@ -3,6 +3,8 @@ const express = require("express");
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
 const registrations = [
     {
         id: 1,
@@ -34,6 +36,6 @@ app.post("/voluteers", (req, res) => {
     res.status(201).json(newVoluteers);
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log(`Aplication started on http://localhost:${process.env.PORT}`);
+app.listen(PORT, () => {
+    console.log(`Aplication started on http://localhost:${PORT}`);
 });
